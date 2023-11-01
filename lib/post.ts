@@ -30,6 +30,7 @@ export function getSortedPostsData(){
             ...(matterResult.data as {date:string; title: string})
         }
     })
+    //정렬
     return allPostsData.sort((a,b)=>{
         if(a.date<b.date){
             return 1
